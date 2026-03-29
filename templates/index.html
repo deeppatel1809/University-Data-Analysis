@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Data Analysis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 class="logo">Uni<span>Data</span></h1>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/dashboard">Dashboard</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container-fluid section">
+        <div class="section-content">
+            <h1 class="gradient-text">University Data Analysis</h1>
+            <p>Analyze student counseling, employees data, and explore department trends with interactive visualizations.</p>
+            <button class="btn" onclick="window.location.href='/dashboard'">Explore Data</button>
+        </div>
+    </div>
+    <div class="container-fluid analysis">
+        <div class="wave"></div>
+        <h2>Key Insights</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>📊 Student counseling</h3>
+                <p>Analyze student enrollment in different courses.</p>
+            </div>
+            <div class="card">
+                <h3>🏫 Department Insights</h3>
+                <p>Compare department performance, faculty stats, and budget.</p>
+            </div>
+            <div class="card">
+                <h3>👨‍🏫 Employee Analysis</h3>
+                <p>View staff details, retention rates, and workload distribution.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>© 2025 University Data Analysis</p>
+    </footer>
+</body>
+</html>
